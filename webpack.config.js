@@ -6,6 +6,9 @@ module.exports = {
         path: path.resolve(__dirname, 'public'),
         filename: 'bundle.js', // nome do arquivo onde vai ser amezenado, é criado altomatocamente
     },
+    devServer: {
+        contentBase: path.resolve(__dirname, 'public'), // local onde o bundle.js esta armazenado, o devServer vai ficar manitorando e atualiza as alterações
+    },
     module: {
         rules: [
             {
